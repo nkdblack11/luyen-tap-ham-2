@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bai 1</title>
+    <script language="JavaScript">
+        function BinhPhuong(so) {
+            let _so = parseInt(so)
+            let kq = 0
+            if (_so){
+               kq = _so * _so
+                document.getElementById('xuat').innerHTML = 'bình phương của ' + so + ' là: ' + kq
+            }
+        }
+    </script>
+</head>
+<body>
+<h3>Tính bình phương của 1 số</h3>
+<input id="so" type="text"/>
+<button type="button" onclick="BinhPhuong(so.value)">Click</button>
+<div id="xuat" style="color: blue"></div>
+</body>
+</html>
