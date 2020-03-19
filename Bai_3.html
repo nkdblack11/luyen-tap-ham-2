@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bai2</title>
+    <script language="JavaScript">
+        function tinh_giaithua(so) {
+            let result = so;
+            if (so === 0 || so === 1) {
+                return 1;
+            }
+            while(so > 1) {
+                so--;
+                result *= so;
+            }
+            return 'Giai Thừa của số là: ' + result;
+        }
+    </script>
+</head>
+<body>
+<h1>Tính giai thừa của một số nguyên dương</h1>
+<input id="so" type="text"/>
+<button type="button" onclick="xuat.innerHTML=tinh_giaithua(so.value)">click</button>
+<div id="xuat"></div>
+</body>
+</html>
