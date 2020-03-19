@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bai 2</title>
+    <script>
+        function tinhDienTich(so){
+            let r = parseInt(so)
+            document.getElementById('xuat').innerHTML = 'Đường tròn có bán kính '+  r + ' có: '
+            let S = (r*r)*3.14
+            document.getElementById('xuat').innerHTML = 'Diện tich là: ' + S
+            let P = (r*2)*3.14
+            document.getElementById('xuat1').innerHTML = 'Chu vi là: ' + P
+
+        }
+    </script>
+</head>
+<body>
+<h1>Bài 3: Tính diện tích và chu vi hình tròn</h1>
+<p>Nhập Đường kính của đường tròn bạn muốn tính</p>
+<input id="so" type="text"/>
+<button type="button" onclick="tinhDienTich(so.value)">Click</button>
+<div id="xuat" style="color: blue"></div>
+<div id="xuat1" style="color: blue"></div>
+</body>
+</html>
