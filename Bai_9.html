@@ -5,6 +5,23 @@
     <title>Bai 9</title>
 </head>
 <body>
+<script language="JavaScript">
+    function find(arry, n) {
+        let kq = 0;
+        for (let i = 0; i < arry.length; i++) {
+            if (n === arry[i]) {
+                kq++;
+            }
+        }
+        if (kq === 0) {
+            return -1;
+        }
+        return kq;
+    }
 
+    let a = ['a', 'v', 'r', 'd', 'a', 'u', 'j', 'a']
+    let b = prompt('nhập vào ký tự bất kỳ')
+    document.write('số lần ký tự có trong mảng là: ' + find(a, b))
+</script>
 </body>
 </html>
