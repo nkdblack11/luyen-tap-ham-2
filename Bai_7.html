@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bai 7</title>
+</head>
+<body>
+<script>
+    function doiSo(number1,number2) {
+        let kq = number1;
+        number1 = number2;
+        number2 = kq;
+        return "number1 : " + number1 + '<br/>' +" number2: " + number2
+    }
+    let a = parseInt(prompt('nhập number 1'))
+    let b = parseInt(prompt('nhập number 2'))
+    document.write(doiSo(a,b))
+</script>
+</body>
+</html>
